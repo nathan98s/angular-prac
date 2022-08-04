@@ -1,11 +1,18 @@
-.note{
-    height: 100%;
-    width:25%;
-    background-color: thistle;
-    border-radius: 25px;
-    box-shadow: 5%;
+
+
+.note-holder {
+    margin: auto;
     text-align: center;
-    margin: 25px 0px 25px 0px;
-    /* padding: 25px 0px 25px 0px; */
+    padding: 0 0 75px 0;
+    height:100%;
+    background-color: #FFF8F7;
+    width: 25%;
+    border-radius: 25px;
+    margin: 50px 50px 50px 50px;    
 }
+
+.note-container{
+    display: flex;
+}
+
 

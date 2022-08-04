@@ -1,10 +1,10 @@
 export class NoteObject{
 
-    title: String;
-    message: String;
+    title: string;
+    message: string;
 
 
-    constructor(title:String, message:String){
+    constructor(title:string, message:string){
         this.title = title;
         this.message = message;
     }

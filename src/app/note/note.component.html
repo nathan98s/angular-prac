@@ -1,11 +1,14 @@
-<!-- <div class="note">
-    <h1>title</h1>
-    <p>this is some filler text</p>
-</div> -->
-<div>
-    <!-- <div *ngFor="let note of notes">
-        {{ note.title }}
-        <hr>
-        {{ note.message }}
-    </div> -->
+<div class="container">
+
+    <div class="header">
+        <h1>Your Notes</h1>
+    </div>
+
+
+    <div class="note-container">
+        <div class="note-holder" *ngFor="let note of noteList">
+            <app-post-it [title]= "note.title" [message]="note.message"></app-post-it>
+        </div>
+    </div>
+    
 </div>

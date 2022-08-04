@@ -4,9 +4,10 @@ import { NoteObject } from './objects/note';
 @Injectable({
   providedIn: 'root'
 })
+
 export class NoteService {
 
-  constructor() { }
+  constructor() {}
 
   getNotes() {
     var note1 = new NoteObject("Note 1", "this is the message from the first note");

@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NoteComponent } from './note/note.component';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
+import { PostItComponent } from './post-it/post-it.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     NoteComponent,
     UserComponent,
-    HomeComponent
+    HomeComponent,
+    PostItComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, Injectable, OnInit } from '@angular/core';
 import { NoteService } from '../note.service';
 
 import { NoteObject } from '../objects/note';
@@ -8,18 +8,18 @@ import { NoteObject } from '../objects/note';
   templateUrl: './note.component.html',
   styleUrls: ['./note.component.css']
 })
+@Injectable()
 export class NoteComponent implements OnInit {
 
-  // private notes :NoteObject[];
+  public noteList: NoteObject[];
   private noteService: NoteService;
-  // notes: NoteObject[],
-  constructor( private nService: NoteService) { 
-    // this.notes = notes;
+  
+  constructor(private nService: NoteService) { 
     this.noteService = nService;
   }
 
   ngOnInit(): void {
-    // this.notes = this.noteService.getNotes();
+    this.noteList = this.noteService.getNotes();
   }
 
 }
