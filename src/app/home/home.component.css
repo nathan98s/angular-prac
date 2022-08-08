@@ -1,0 +1,31 @@
+.home_button{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+    width: 50%;
+    font-weight: 5px;
+    font-size: 1.5vh;
+    border: 0.5px solid black;
+    animation-name: out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.home_button:hover{
+    animation-name: in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes in {
+    from {height:100%; width:50%; color: black; background-color: white;}
+    to {height: 105%; width:60%; color: white; background-color: black;}
+}
+
+
+@keyframes out {
+    from {height: 105%; width:60%; color: white; background-color: black;}
+    to {height:100%; width:50%; color: blakc; background-color: white;}
+    
+}

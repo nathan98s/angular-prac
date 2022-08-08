@@ -1,4 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12" style="text-align: center; margin-top: 25px"><h1>Latest Notes</h1> </div>
+    </div>
+    <div class="row">
+        <div class="col-4" style="text-align: center;">
+            <button  class="home_button" routerLink="note">NOTE</button>
+        </div>
+        <div class="col-4">             
+            <div class="col-container">
+            
+            </div>
+        </div>
+        <div class="col-4" style="text-align: center;">
+            <button class="home_button"  routerLink="user">USER</button>
+        </div>
+    </div>
+    
+    <hr>
 
-<a routerLink="note">NOTE</a>
-<br>
-<a routerLink="user">USER</a>
+    <div class="row">
+        <div class="col-4" *ngFor="let note of notes">
+            <app-post-it [title]= "note.title" [message]="note.message"></app-post-it>
+        </div>
+
+    </div>
+    
+</div>
